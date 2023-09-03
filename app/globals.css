@@ -65,6 +65,10 @@ body:after {
   @apply w-full h-full fixed top-0 left-0 z-[300]
 }
 
+.clip-circle-credits {
+  position:absolute;
+}
+
 .footer {
   border-top:2px solid gray;
 }

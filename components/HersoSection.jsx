@@ -3,7 +3,7 @@ const HeroSection = () => {
         <>
             <div className="w-[95%] md:w-[620px] h-[420px] lg:h-[430px] flex items-center overflow-hidden justify-center absolute top-[55%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[10] cursor-none container">
                 <h1 className="text-[3rem] md:text-[4rem] text-center font-black text-primary-color uppercase leading-[45px] md:leading-[60px] text-shadow">I'm the torch that illuminates the web with captivating experiences</h1>
-                <div class="w-[95%] h-[300px] md:w-[370px] md:h-[370px] circle flex items-center justify-center">
+                <div class="w-[95%] h-[300px] md:w-[370px] md:h-[370px] circle hidden lg:flex items-center justify-center">
                     <div class="inner-circle"></div>
                 </div>
             </div>
