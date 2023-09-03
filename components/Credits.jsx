@@ -3,7 +3,7 @@ const Credits = () => {
         <>
             <div className="clip-circle-credits overflow-y-scroll">
                 <span className="text-white absolute top-[3%] right-[5%] text-4xl cursor-pointer close-credits">&times;</span>
-                <div className="w-full md:w-[80%] h-auto text-white text-lg flex flex-col mt-[80px] translate-x-0 credits-container px-4">
+                <div className="w-full md:w-[80%] h-auto text-white text-lg flex flex-col mt-[80px] translate-x-0 credits-container px-4 overflow-y-scroll">
                     <h1 className="text-5xl md:text-7xl xl:text-9xl text-primary-color font-black uppercase text-shadow-3">credits</h1>
                     <div className="mt-[60px]">
                         <div className="flex flex-col">
