@@ -81,7 +81,7 @@ body:after {
   transform: rotate(0);
 }
 
-.socials:hover {
+.mail:hover {
   color:var(--primary-color);
 }
 

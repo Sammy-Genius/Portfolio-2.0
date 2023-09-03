@@ -32,8 +32,8 @@ const MyWorks = () => {
         body: "This is the version 2.0 of my portfolio. I decided to take a minimalistic approach for the art direction of this project while being as creative as possible with the nav bar being the main focal point of all micro interactions. The inspiration for the design concept was inspired by Studio Lumio's website & the micro interactions was inspired by Apple's Dynamic Island.",
         role: 'Animations & Development',
         tools: 'Next.Js, JavaScript, TailwindCSS, GSAP',
-        github:"hohoh",
-        live:""
+        github:"https://github.com/Sammy-Genius/Portfolio-2.0/tree/main",
+        live:"https://samuelosei.vercel.app/"
     },
         {
         id:2,
@@ -83,8 +83,8 @@ const MyWorks = () => {
     return ( 
         <div className="w-full h-full">
             <div className="opacity-0 reveal">
-                <h1 className="uppercase text-primary-color text-4xl md:text-7xl xl:text-9xl font-black text-center mt-[100px] text-shadow-3">My Works<sup>(6)</sup></h1>
-                <div className="mt-10 w-[80%] my-0 mx-auto">
+                <h1 className="uppercase text-primary-color text-5xl md:text-7xl xl:text-9xl font-black text-center mt-[100px] text-shadow-3">My Works<sup>(6)</sup></h1>
+                <div className="mt-10 w-[90%] lg:w-[80%] my-0 mx-auto">
                     {works.map(work => {
                         return <div className="bottom-line py-10 w-full text-lg text-white" key={work.id}>
                             <h1 className="text-3xl lg:text-5xl text-primary-color font-black">{work.title}</h1>

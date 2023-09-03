@@ -28,7 +28,7 @@ export default function Home() {
   }, [])
 
   return (
-    <main className="w-screen h-screen overflow-x-hidden">
+    <main className="w-screen h-screen overflow-hidden">
 
       {/* Navbar */}
       <NavBar/>
@@ -49,7 +49,7 @@ export default function Home() {
       <Contact/>
 
       {/* Preload overlay screen */}
-      <div className="w-full h-full absolute top-0 left-0 bg-secondary-color overlay z-[50]">
+      <div className="w-full h-full fixed top-0 left-0 bg-secondary-color overlay z-[50] overflow-hidden">
         <div className="absolute top-[63%] left-[50%] tranlate-y-[-50%] translate-x-[-50%] text-shadow-2">
           <p className="text-white text-lg">click to access portfolio</p>
           <div className="w-[230px] h-[30px] absolute top-0 left-[-2%] bg-secondary-color mask"></div>
@@ -60,7 +60,9 @@ export default function Home() {
       <div className="w-[130px] h-[130px] rounded-full hidden lg:flex items-center justify-center text-white rotate-[-20deg] uppercase absolute bottom-[20%] left-[10%] round-box credits-btn">credits</div>
 
       {/* Round let's talk button for Desktop */}
-      <div className="w-[130px] h-[130px] rounded-full hidden lg:flex items-center justify-center text-white rotate-[-20deg] uppercase absolute bottom-[20%] right-[10%] round-box"><a href="mailto:mrsammadeit@gmail.com">let's talk</a></div>
+      <a href="mailto:mrsammadeit@gmail.com">
+      <div className="w-[130px] h-[130px] rounded-full hidden lg:flex items-center justify-center text-white rotate-[-20deg] uppercase absolute bottom-[20%] right-[10%] round-box">let's talk</div>
+      </a>
 
     </main>
   )

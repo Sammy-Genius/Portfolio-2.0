@@ -14,7 +14,7 @@ const HeroSection = () => {
                     <div className="flex items-center justify-around xl:w-[40%] w-[60%]">
                         <p>Available for hire</p>
                         <div className="w-[6px] h-[6px] rounded-full bg-primary-color"></div>
-                        <a href="mailto:mrsammadeit@gmail.com" className="socials">Let's Talk</a>
+                        <a href="mailto:mrsammadeit@gmail.com" className="mail">Talk to me</a>
                     </div>
             </div>
         </>
