@@ -3,7 +3,7 @@
 import { dynamicAnimation, menuAnimation, shadow, creditsAnimation, contactAnimation } from "@/animations";
 import { useLayoutEffect } from "react";
 import NavBar from "@/components/NavBar";
-import HeroSection from "@/components/HersoSection";
+import HeroSection from "@/components/HeroSection";
 import MenuForSmallScreens from "@/components/MenuForSmallScreens";
 import Credits from "@/components/Credits";
 import Footer from "@/components/Footer";
