@@ -13,7 +13,7 @@ const NavBar = () => {
             <Link href="MyWorks">
                 <div className="works w-[120px] h-[120px] rounded-full flex justify-center items-center bg-primary-color fixed top-[5%] right-[35%] scale-0 font-semibold z-[100]">My Works</div>
             </Link>
-            <div className='w-[80px] h-[80px] bg-primary-color rounded-xl absolute top-[55%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex justify-center items-center btn font-black text-xl z-[150] cursor-pointer'>SO</div>
+            <div className='w-[80px] h-[80px] bg-primary-color rounded-xl absolute top-[55%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex justify-center items-center btn font-black text-xl z-[150] cursor-pointer hover:rotate-[3deg]'>SO</div>
         </>
      );
 }

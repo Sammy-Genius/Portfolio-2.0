@@ -130,6 +130,7 @@ body:after {
   animation: animate .5s infinite;
 }
 
+
 @keyframes animate {
   from {
     opacity:0.2;
@@ -137,3 +138,9 @@ body:after {
     opacity:1;
   }
 }
+
+.btn {
+  transition: all .1 ease-in-out;
+}
+
+
