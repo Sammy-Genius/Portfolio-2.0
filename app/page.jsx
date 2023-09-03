@@ -51,8 +51,8 @@ export default function Home() {
       {/* Preload overlay screen */}
       <div className="w-full h-full fixed top-0 left-0 bg-secondary-color overlay z-[50] overflow-hidden">
         <div className="absolute top-[63%] left-[50%] tranlate-y-[-50%] translate-x-[-50%] text-shadow-2">
-          <p className="text-white text-lg">click to access portfolio</p>
-          <div className="w-[230px] h-[30px] absolute top-0 left-[-2%] bg-secondary-color mask"></div>
+          <p className="text-white text-lg text-center">click to access portfolio</p>
+          <div className="w-[230px] h-[100px] absolute top-0 left-[-2%] bg-secondary-color mask"></div>
         </div>
       </div>
 

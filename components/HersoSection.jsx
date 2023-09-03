@@ -7,7 +7,7 @@ const HeroSection = () => {
                     <div class="inner-circle"></div>
                 </div>
             </div>
-            <div className="text-white w-full md:w-[600px] h-[500px] lg:h-[520px] flex flex-col items-center overflow-hidden justify-between absolute top-[55%] left-[50%] translate-x-[-50%] translate-y-[-50%] py-0 lg:py-5">
+            <div className="text-white w-full md:w-[600px] h-[500px] lg:h-[520px] flex flex-col items-center overflow-hidden justify-between absolute top-[55%] left-[50%] translate-x-[-50%] translate-y-[-50%] py-6 lg:py-5">
                     <div className="flex items-center justify-around xl:w-[70%] w-[90%]">
                         <p>Frontend Developer based in Accra, Ghana</p>
                     </div>
