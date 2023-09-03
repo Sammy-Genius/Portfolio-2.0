@@ -4,7 +4,7 @@ const MenuForSmallScreens = () => {
     return ( 
         <>
             <div className="clip-circle-menu flex flex-col justify-center lg:hidden">
-                <span className="text-white absolute top-[5%] right-[10%] text-3xl close-btn">&times;</span>
+                <span className="text-white absolute top-[5%] right-[10%] text-4xl close-btn">&times;</span>
                 <div className="w-[80%] h-[50%] text-white text-4xl flex flex-col items-center justify-evenly mx-auto my-0">
                     <div className="w-auto h-auto overflow-hidden">
                         <li className="translate-y-0 list-none menu-links">
