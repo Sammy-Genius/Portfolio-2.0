@@ -1,12 +1,14 @@
 import { gsap } from "gsap";
 
+//THIS IS THE PRELOAD ANIMATION THAT EXPANDS THE NAV BAR. DYNAMIC ISLAND CONCEPT
 export const dynamicAnimation = () => {
     const btn = document.querySelector('.btn');
 
     const tl = gsap.timeline({paused:true, reversed:true});
     let screenSize = gsap.matchMedia();
 
-    screenSize.add("(min-width:800px)", () => {
+    //for desktop screens
+    screenSize.add("(min-width:1000px)", () => {
         tl.to('.mask', {clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration:1.2, ease:'power3.inOut'})
         tl.to(btn, {top:'10%', left:'37%', borderRadius:'35px', duration:1, ease:'power3.in'})
         tl.to('.overlay', {display:"none", duration:1, ease:'power3.in'}, '<')
@@ -17,8 +19,8 @@ export const dynamicAnimation = () => {
         tl.to('.dot', {width:'10px', height:'10px', duration:.7, ease:'power3.inOut'}, '<')
     })
 
-
-    screenSize.add("(max-width:799px)", () => {
+    //fot smaller screens
+    screenSize.add("(max-width:999px)", () => {
         tl.to('.mask', {clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration:1.2, ease:'power3.inOut'})
         tl.to(btn, {top:'10%', left:'22%', borderRadius:'35px', duration:1, ease:'power3.in'})
         tl.to('.overlay', {display:"none", duration:1, ease:'power3.in'}, '<')
@@ -34,6 +36,7 @@ export const dynamicAnimation = () => {
     })
 }
 
+//FOR MENU ANIMATION
 export const menuAnimation = () => {
     const menuBtn = document.querySelector('.menu-btn');
     const closeBtn = document.querySelector('.close-btn');
@@ -41,7 +44,7 @@ export const menuAnimation = () => {
     const tl = gsap.timeline({paused:true, reversed:true});
     let screenSize = gsap.matchMedia();
 
-    //ANIMATIONS FOR DESKTOP SCREENS*/
+    //ANIMATIONS FOR DESKTOP SCREENS
     screenSize.add("(min-width:1000px)", () => {
         tl.to('.nav-bar', {width:'400px', duration:.7, ease:'power3.inOut'},'-=.185')
         tl.to('.btn', {x:25, duration:.5, ease:'power3.inOut'}, '<')
@@ -52,6 +55,7 @@ export const menuAnimation = () => {
         tl.to('.works', {right:'23%', scale:1, duration:.8, ease:'power3.inOut'}, '<')
     })
 
+    //for smaller screens
     screenSize.add("(max-width:999px)", () => {
         tl.to('.nav-bar', {width:'60%', duration:.7, ease:'power3.inOut'},'<')
         tl.to('.btn', {x:25, duration:.5, ease:'power3.inOut'}, '<')
@@ -85,6 +89,7 @@ export const menuAnimation = () => {
     })
 }
 
+//THIS IS FOR THE TORCH LIGHT SHADOW EFFECT ON HERO SECTION
 export const shadow = () => {
     const circle = document.querySelector('.circle');
     const container = document.querySelector('.container');
@@ -104,6 +109,7 @@ export const shadow = () => {
     }) 
 }
 
+//CREDITS POP UP ANIMATION
 export const creditsAnimation = () => {
     const creditsBtn = document.querySelector('.credits-btn');
     const creditsBtnMobile = document.querySelector('.credits-btn-mobile');
@@ -112,6 +118,7 @@ export const creditsAnimation = () => {
     const tl = gsap.timeline({paused:true, reversed:true});
     let screenSize = gsap.matchMedia();
 
+    //animation for Desktop screens
     screenSize.add("(min-width:1000px)", () => {
         tl.to('.nav-bar', {width:'400px', duration:.7, ease:'power3.inOut'},'<')
         tl.to('.btn', {x:25, duration:.5, ease:'power3.inOut'}, '<')
@@ -124,7 +131,7 @@ export const creditsAnimation = () => {
 
     });
 
-
+    //animation for smaller screens
     screenSize.add("(max-width:999px)", () => {
         tl.to('.nav-bar', {width:'60%', duration:.7, ease:'power3.inOut'},'<')
         tl.to('.btn', {x:25, duration:.5, ease:'power3.inOut'}, '<')
@@ -150,6 +157,7 @@ export const creditsAnimation = () => {
     });
 };
 
+//CONTACT POP UP ANIMATION
 export const contactAnimation = () => {
     const contactBtn = document.querySelector('.contact-btn');
     const closeContactBtn = document.querySelector('.close-contact-btn');
@@ -157,7 +165,7 @@ export const contactAnimation = () => {
     const tl = gsap.timeline({paused:true, reversed:true});
     let screenSize = gsap.matchMedia();
 
-
+    //for Desktop screens
     screenSize.add("(min-width:1000px)", () => {
         tl.to('.nav-bar', {width:'400px', duration:.7, ease:'power3.inOut'},'<')
         tl.to('.btn', {x:25, duration:.5, ease:'power3.inOut'}, '<')
@@ -175,7 +183,7 @@ export const contactAnimation = () => {
 
     });
 
-
+    //for smaller screens
     screenSize.add("(max-width:999px)", () => {
         tl.to('.nav-bar', {width:'60%', duration:.7, ease:'power3.inOut'},'<')
         tl.to('.btn', {x:25, duration:.5, ease:'power3.inOut'}, '<')
@@ -203,6 +211,7 @@ export const contactAnimation = () => {
     });
 }
 
+//PAGE TRANSITION ANIMATION
 export const pageTransitionAnimation = () => {
     const tl = gsap.timeline();
 
