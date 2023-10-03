@@ -50,7 +50,7 @@ const MyWorks = () => {
         body: "With the support of other talented developers from Slightly Techie Network, I had the opportunity to be the frontend lead for this project. The creative direction of this project was to bridge the gap between creativity and minimalism.",
         role: 'Animations & Development + Art Direction',
         tools: 'Next.JS, JavaScript, TailwindCSS, GSAP, Framer Motion, React Intersection Observer, Firebase',
-        live: 'COMING SOON'
+        live: 'https://slightlytechie.com/'
     },
         {
         id:4,
@@ -83,7 +83,7 @@ const MyWorks = () => {
     return ( 
         <div className="w-full h-full">
             <div className="opacity-0 reveal">
-                <h1 className="uppercase text-primary-color text-5xl md:text-7xl xl:text-9xl font-black text-center mt-[100px] text-shadow-3">My Works<sup>(6)</sup></h1>
+                <h1 className="uppercase text-primary-color text-5xl md:text-7xl xl:text-9xl font-black text-center mt-[100px] text-shadow-3">My Works<sup>({works.length})</sup></h1>
                 <div className="mt-10 w-[90%] lg:w-[80%] my-0 mx-auto">
                     {works.map(work => {
                         return <div className="bottom-line py-10 w-full text-lg text-white" key={work.id}>
@@ -92,12 +92,11 @@ const MyWorks = () => {
                             <div className="my-5">
                                 <p><span className="text-primary-color">Role:</span> {work.role}</p>
                                 <p><span className="text-primary-color">Tools:</span> {work.tools}</p>
-                            </div>
-                            {work.title == "Slightly Techie Network" ? <p className="text-primary-color uppercase">Coming Soon</p> : 
+                            </div> 
                             <div className="flex text-primary-color">
-                                <a href={work.github} className="mr-3 underline">GitHub</a>
+                                {work.title == "Slightly Techie Network" ? <a href='' className="mr-3 underline hidden"></a> : <a href={work.github} className="mr-3 underline">GitHub</a>}
                                 <a href={work.live} className="underline">Live Site</a>
-                            </div>}
+                            </div>
                         </div>
                     })}
                     <p className="text-2xl py-10 text-white">For more of my works see <a href="https://github.com/Sammy-Genius?tab=repositories" className="text-primary-color underline">GitHub</a> or <a href="https://twitter.com/sammyisagenius/status/1665450701152026625?s=20" className="text-primary-color underline">Experiments</a></p>
